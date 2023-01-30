@@ -9,31 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>Barber Shop</title>
+    <title>BarberShop</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html"><svg width="65.97" height="55.46"><use href="./img/symbol-defs.svg#icon-logo"></use></svg></a>
-        </div>   
-        <div class="nav-container">
-            <nav>
-                <ul>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Услуги и цены</a></li>
-                    <li><a href="">Мастера</a></li>
-                    <li><a href="">Контакты</a></li>
+            <a class="header-logo" href="index.html"><svg class="logo-icon" width="65.97" height="55.46"><use href="./img/symbol-defs.svg#icon-logo"></use></svg></a>
+            <nav class="header-navigation">
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-link" href="">О нас</a></li>
+                    <li class="header-item"><a class="header-link" href="">Услуги и цены</a></li>
+                    <li class="header-item"><a class="header-link" href="">Мастера</a></li>
+                    <li class="header-item"><a class="header-link" href="">Контакты</a></li>
                 </ul>
             </nav>
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-                <button tupe="button">онлайн-запись</button>
+            <div class="header-contacts">
+                <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button class="header-btn btn btn--light" tupe="button">онлайн-запись</button>
+            </div>
         </div> 
     </header>
     <main>
-        <section>
-            <ul>
-                <li><a href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+        <section class="hero">
+            <ul class="hero-list">
+                <li class="hero-item"><a class="hero-link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                <li class="hero-item"><a class="hero-link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
             </ul>
             <p lang="en">A hair salon for men in Kyiv</p>
             <h1 lang="en">BarberShop</h1>
@@ -45,13 +45,13 @@
                 <li><img src="./img/about-img-1.jpg" alt="барбер бреет шею"></li>
                 <li><img src="./img/about-img-2.jpg" alt="барбер делает кант"></li>
             </ul>
-            <p>О НАС</p>
-            <h2>Лучший Барбершоп твоего города</h2>
-            <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-            <p>Мы команда, которая никогда не останавливается на достигнутом 
+            <p class="hero-top-text">О НАС</p>
+            <h2 class="hero-heading">Лучший Барбершоп твоего города</h2>
+            <p class="hero-bottom-text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+            <p class="hero-bottom-text">Мы команда, которая никогда не останавливается на достигнутом 
                 и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                 то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-            <button tupe="button">онлайн-запись</button>    
+            <button class="hero-btn  btn btn--dark" tupe="button">онлайн-запись</button>    
         </section>
         <section>
             <p>Проведи время в компании лучших мастеров</p>
@@ -92,7 +92,7 @@
                     <p>от 200 грн.</p>
                 </li>
             </ul>
-            <button tupe="button">онлайн-запись</button>
+            <button class=" btn btn--light" tupe="button">онлайн-запись</button>
         </section>
         <section>
             <ul>
