@@ -1,61 +1,65 @@
 
 .header {
+    position: absolute;
+    width: 100%;
     .container {
-        width: 1280px;
-        padding: 0 15px;
         margin: 0 auto;
         display: flex;
         align-items: center;
-        padding: 32px 62px 0 52px;
+        padding-top: 20px;
     }
-}
-.header-logo {
-    margin-right: 70px;
-}
-
-.logo-icon {
-    fill: #303030;
-}
-
-.header-list {
-    display: flex;
-}
-
-.header-item:not(:last-child) {
-    margin-right: 40px;
-}
-
-.header-link {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    transition: color 300ms linear;
-
-    color: #000;
     
-    &:hover, &:focus {
-        color: var(--active-color);
+    &__logo {     
+        margin-right: 55px;
+        margin-left: 50px;
     }
-}
+    
+    &__logo-icon {    
+        fill: #303030;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+        &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+    &__link {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.1em;
 
-.header-contacts {
-    margin-left: auto;
-}
+        transition: color 300ms linear;
+    
+        color: var(--light-color);
+        
+        &:hover, &:focus {
+            color: var(--active-color);
+        }
+    }
 
-.header-tel {
-    margin-right: 40px;
+    &__contacts {
+        margin-left: auto;
+    }
 
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: color 300ms linear;
-
-color: #000;
-
-    &:hover, &:focus {
-        color: var(--active-color);
+    &__tel {
+        margin-right: 40px;
+    
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: color 300ms linear;
+    
+    color: var(--light-color);
+    
+        &:hover, &:focus {
+            color: var(--active-color);
+        }
     }
 }
