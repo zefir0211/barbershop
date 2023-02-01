@@ -16,6 +16,7 @@
     &:hover, &:focus {
         background-color: var(--active-color);
         color: var(--light-color);
+        cursor: pointer;
     }
     &--light {
         color: var(--light-color);
