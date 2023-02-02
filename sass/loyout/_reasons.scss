@@ -1,0 +1,115 @@
+.reasons {
+    .container {
+        display: flex;
+        padding-top: 152px;
+        padding-bottom: 157px;
+        padding-left: 155px;
+        padding-right: 125px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 500px;
+    } 
+
+    &__item {
+        width: 170px;
+        height: 133px;
+        
+        &:nth-child(2n) {
+            margin-top: 30px;
+        }
+
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+        &:first-child {
+            margin-bottom: 30px;
+          }
+    }
+
+    &__statistics {
+        display: block;
+
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.35;
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: var(--dark-color);
+        &-plus {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.37;
+            text-align: center;
+    
+            color: #FF6C00;
+    
+            vertical-align: top;
+        }
+    }
+
+    &__explanation {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-align: center;
+
+        color: var(--dark-color);
+    }
+
+    &__text-container {
+        position: relative;
+        width: 500px;
+        
+        margin-top: -9px;
+    }
+
+    &__top-text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: var(--dark-color);
+
+        margin-left: 80px;
+        margin-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            content: '';
+            width: 0.96px;
+            height: 60px; 
+            background-color: var(--dark-color);
+            transform: rotate(90deg) translate(-25px);
+        }
+    }
+    &__heading {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+
+        color: var(--dark-color);
+
+        margin-bottom: 20px;
+    }
+    &__bottom-text {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+
+        color: #555555;
+    }
+}
