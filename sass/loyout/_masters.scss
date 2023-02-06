@@ -30,7 +30,7 @@
             width: 0.96px;
             height: 60px; 
             background-color: var(--dark-color);
-            transform: rotate(90deg) translate(-25px);
+            transform: rotate(90deg) translate(-23px);
         }
     }
 
@@ -105,7 +105,7 @@
 
         transition: fill 300ms linear;
 
-        &:hover, :focus {
+        &:hover, &:focus {
             fill: #FF6C00;
             cursor: pointer;
         }

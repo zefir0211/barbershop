@@ -1,0 +1,45 @@
+.gallery {
+    .container {
+        padding: 130px 55px;
+    }
+
+&__text-container {
+    position: relative;
+
+    margin-bottom: 44px;
+}
+
+    &__top-text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: var(--dark-color);
+
+        margin-left: 80px;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 30px;
+            content: '';
+            width: 0.96px;
+            height: 60px; 
+            background-color: var(--dark-color);
+            transform: rotate(90deg) translate(-23px);
+        }
+    }
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 30px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

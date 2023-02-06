@@ -87,6 +87,7 @@
             transform: rotate(-90deg) translate(-19px);
         }
     }  
+
     &__link {
         font-weight: 600;
         font-size: 11px;
@@ -96,7 +97,7 @@
         
         color: var(--dark-color);
 
-        &:hover, :focus {
+        &:hover, &:focus {
             color: var(--active-color);
             cursor: pointer;
         }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/title-icon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -17,10 +18,10 @@
             <a class="header__logo" href="index.html"><svg class="header__logo-icon" width="65.97" height="55.46"><use href="./img/symbol-defs.svg#icon-logo"></use></svg></a>
             <nav class="header__navigation">
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link" href="">О нас</a></li>
-                    <li class="header__item"><a class="header__link" href="">Услуги и цены</a></li>
-                    <li class="header__item"><a class="header__link" href="">Мастера</a></li>
-                    <li class="header__item"><a class="header__link" href="">Контакты</a></li>
+                    <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
+                    <li class="header__item"><a class="header__link" href="#prices">Услуги и цены</a></li>
+                    <li class="header__item"><a class="header__link" href="#masters">Мастера</a></li>
+                    <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header__contacts">
@@ -46,7 +47,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <ul class="about__list">
                     <li class="about__item"><img class="about__img" src="./img/about-img-1.jpg" alt="барбер бреет шею"></li>
@@ -59,11 +60,11 @@
                     <p class="about__second-text">Мы команда, которая никогда не останавливается на достигнутом 
                         и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <button class="about__btn  btn btn--dark" tupe="button">онлайн-запись</button>    
+                        <button class="prices__btn btn btn--dark" tupe="button">онлайн-запись</button>    
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="prices">
             <div class="container">
                 <p class="prices__top-text">Проведи время в компании лучших мастеров</p>
                 <h2 class="prices__heading">Услуги и цены</h2>
@@ -135,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="masters">
+        <section class="masters" id="masters">
             <div class="container">
                 <div class="masters__container-text">
                     <p class="masters__top-text">для настоящих ценителей атмосферы</p>
@@ -256,36 +257,88 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <p>На латинском языке “барба” означает “борода”</p>
-            <img src="./img/gallery-1.jpg" alt="барбер стрижет">
-            <img src="./img/gallery-2.jpg" alt="барбер бреет">
-            <img src="./img/gallery-3.jpg" alt="барбер охлаждает лицо">
-            <img src="./img/gallery-4.jpg" alt="барбер подводит кант">
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__text-container">
+                    <p class="gallery__top-text">На латинском языке “барба” означает “борода”</p>
+                    <h2 class="visually-hidden">Галерея</h2>
+                </div>
+                <ul class="gallery__list">
+                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-1.jpg" alt="барбер стрижет"></li>
+                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-2.jpg" alt="барбер бреет"></li>
+                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-3.jpg" alt="барбер охлаждает лицо"></li>
+                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-4.jpg" alt="барбер подводит кант"></li>
+                </ul>  
+            </div>
         </section>
-        <section>
-            <h2>Онлайн-запись</h2>
-        </section>
-        <section>
-            <h2>Контакты</h2>
-            <address>
-                <ul>
-                    <li><a href="https://goo.gl/maps/fn1ZS89mWcr5evEQ9">ул. Васильковая, 7А
-                        Киев, 08132</a></li>
-                    <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                    <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-                </ul>
-            </address>
-            <p>время работы</p>
-            <p>Ежедневно с 9:00 до 22:00</p>
-        </section>
+        <div class="connect-wrap">
+            <div class="container">
+                <section class="online">
+                    <h2 class="online__heading">Онлайн-запись</h2>
+                    <form class="online__form">
+                            <div class="online__input-container">
+                                <div class="online__field">
+                                    <input
+                                    type="text"
+                                    id="online-name"
+                                    name="online-name"
+                                    class="online__input"
+                                    placeholder=" "
+                                    required
+                                    />
+                                    <label class="online__label" for="online-name">Имя*</label>
+                                </div>
+                                <div class="online__field">
+                                    <input
+                                    type="tel"
+                                    id="online-tel"
+                                    name="online-tel"
+                                    class="online__input"
+                                    placeholder=" "
+                                    pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}[\-]\d{2}[\-]\d{2}" title="+38(097)111-11-11" minlength="15" maxlength="17"
+                                    required
+                                    />
+                                    <label class="online__label" for="online-tel">Телефон*</label>
+                                </div>
+                            </div>
+                            <div class="online__field-text">
+                                <textarea class="online__text" name="online-text" id="online-text" placeholder=" "></textarea>
+                                <label class="online__label" for="online-text">сообщение</label>
+                            </div>
+                            <button class="header__btn btn btn--light" tupe="button">отправить</button>
+                    </form>
+                </section>
+                <section class="contacts" id="contacts">
+                    <h2 class="contacts__heading">Контакты</h2>
+                    <address class="contacts__location">
+                        <ul class="contacts__list">
+                            <li class="contacts__item"><a class="contacts__link" href="https://goo.gl/maps/fn1ZS89mWcr5evEQ9">
+                                <svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-map-pin"></use></svg>ул. Васильковая, 7А <br>
+                                Киев, 08132</a></li>
+                            <li class="contacts__item"><a class="contacts__link" href="tel:+380441111111"><svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-phone"></use></svg>+38 044 111 11 11</a></li>
+                            <li class="contacts__item"><a class="contacts__link link--underline" href="mailto:barbershop@email.com"><svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-mail"></use></svg>barbershop@email.com</a></li>
+                        </ul>
+                    </address>
+                    <div class="contacts__container-text">
+                        <p class="contacts__bottom-top-text">время работы</p>
+                        <p class="contacts__bottom-bot-text ">Ежедневно с 9:00 до 22:00</p>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>	&#169; Copyright 2020</p>
-        <ul>
-            <li><a href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-            <li><a href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
-        </ul>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container-text">
+                <p class="footer__text"><span class="footer__text-item">&#169;</span> Copyright 2023</p>
+            </div>
+            <div class="footer__soc">
+                <ul class="footer__soc-list">
+                    <li class="footer__soc-item"><a class="footer__soc-link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li class="footer__soc-item"><a class="footer__soc-link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     

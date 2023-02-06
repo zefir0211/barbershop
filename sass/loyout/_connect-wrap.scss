@@ -1,0 +1,23 @@
+.connect-wrap {
+    width: 1280px;
+    margin: 0 auto;
+    
+    background-color: #191C26;
+    background-image: url(../img/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px);
+
+    .container {
+        display: flex;
+        padding: 0;
+    }
+
+    .contacts {
+        width: calc(50% - 15px);
+        height: 644px;
+
+        padding-top: 130px;
+        padding-left: 100px;
+    }
+}
