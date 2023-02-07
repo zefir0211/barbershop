@@ -34,9 +34,23 @@ img {
 }
 
 .container {
-  width: 1280px;
-  padding: 0 15px;
+  max-width: 480px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
 
 .btn {
@@ -89,17 +103,16 @@ img {
   width: 100%;
 }
 .header .container {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  padding-top: 20px;
-}
-.header__logo {
-  margin-right: 60px;
-  margin-left: 35px;
+  position: relative;
+  padding: 40px 30px 0 30px;
 }
 .header__logo-icon {
-  fill: #303030;
+  fill: var(--light-color);
+}
+@media screen and (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
 }
 .header__list {
   display: flex;
@@ -124,6 +137,11 @@ img {
 .header__contacts {
   margin-left: auto;
 }
+@media screen and (max-width: 768px) {
+  .header__contacts {
+    display: none;
+  }
+}
 .header__tel {
   margin-right: 40px;
   font-weight: 600;
@@ -138,52 +156,66 @@ img {
   color: var(--active-color);
   cursor: pointer;
 }
+.header__mob-btn {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  fill: var(--light-color);
+  transition: fill 300ms linear;
+}
+.header__mob-btn:hover, .header__mob-btn:focus {
+  fill: var(--active-color);
+}
 
 .hero .container {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  margin: 0 auto;
+  padding: 0;
 }
 .hero__container {
-  width: 1073px;
-  height: 650px;
-  padding-top: 271px;
-  padding-left: 65px;
+  min-width: 480px;
+  min-height: 580px;
   background-color: #303030;
   flex-grow: 1;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/header-background-1.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 208px 30px 0 30px;
 }
 .hero__top-text {
-  font-family: "Open Sans";
+  position: relative;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.hero__top-text::before {
+  position: absolute;
+  top: -41px;
+  left: -50px;
+  content: "";
+  width: 0.96px;
+  height: 60px;
+  background-color: rgba(157, 164, 189, 0.6);
+  transform: rotate(-90deg) translate(-19px);
 }
 .hero__heading {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
+  font-size: 48px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
-  margin-bottom: 20px;
   color: var(--light-color);
+  margin-bottom: 20px;
 }
 .hero__bottom-text {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.66;
+  max-width: 306px;
+  font-size: 16px;
+  line-height: 1.62;
   letter-spacing: 0.02em;
-  width: 400px;
   color: #9DA4BD;
 }
 
@@ -193,6 +225,11 @@ img {
   padding-left: 50px;
   display: flex;
   align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .soc {
+    display: none;
+  }
 }
 .soc__list {
   display: flex;
@@ -227,28 +264,16 @@ img {
   margin-left: 133px;
 }
 
-.about {
-  padding-top: 165px;
-  padding-bottom: 90px;
-}
 .about .container {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  padding: 84px 30px 84px 30px;
 }
-.about__list {
-  display: flex;
-}
-.about__item:first-child {
-  margin-right: 30px;
-}
-.about__img {
-  max-width: 270px;
-  height: auto;
+@media screen and (max-width: 768px) {
+  .about__img {
+    display: none;
+  }
 }
 .about__container-text {
   position: relative;
-  max-width: 500px;
 }
 .about__top-text {
   font-weight: 600;
@@ -273,27 +298,25 @@ img {
 .about__heading {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
+  font-size: 29px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--dark-color);
   margin-bottom: 20px;
 }
 .about__first-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.66;
+  font-size: 16px;
+  line-height: 1.6;
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 20px;
 }
 .about__second-text {
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.85;
+  line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .prices {
