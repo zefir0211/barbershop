@@ -1,23 +1,39 @@
 .connect-wrap {
-    width: 1280px;
-    margin: 0 auto;
+    // width: 1280px;
+    // margin: 0 auto;
     
+    // background-color: #191C26;
+    // background-image: url(../img/contacts-bg.png);
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // background-size: calc(50% - 15px);
+
+    // MOB
+    // width: 1280px;
+    // margin: 0 auto;
+    width: 480px;
+    margin: 0 auto;
+
     background-color: #191C26;
-    background-image: url(../img/contacts-bg.png);
+    background-image: url(../img/contacts-mob-bg.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: calc(50% - 15px);
+    background-position: bottom;
 
     .container {
         display: flex;
+        flex-direction: column;
+
         padding: 0;
     }
 
     .contacts {
-        width: calc(50% - 15px);
-        height: 644px;
+        // width: calc(50% - 15px);
+        // height: 644px;
+        
+        // MOB
+        height: 496px;
 
-        padding-top: 130px;
-        padding-left: 100px;
+        // padding-top: 130px;
+        // padding-left: 100px;
     }
 }
