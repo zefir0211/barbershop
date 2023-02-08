@@ -9,17 +9,17 @@
     // background-size: calc(50% - 15px);
 
     // MOB
-    // width: 1280px;
-    // margin: 0 auto;
-    width: 480px;
     margin: 0 auto;
 
-    background-color: #191C26;
-    background-image: url(../img/contacts-mob-bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
+    
+    
 
     .container {
+        background-color: #191C26;
+        background-image: url(../img/contacts-mob-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+
         display: flex;
         flex-direction: column;
 

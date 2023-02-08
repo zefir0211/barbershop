@@ -26,20 +26,22 @@
         // height: 133px;
 
         // MOB
+        margin: 0 auto;
 
         width: 193px;
         height: 133px;
         
-        &:nth-child(2n) {
-            margin-top: 30px;
+        @media screen and (min-width: 480px)  {
+            margin: 0 ;
+            &:nth-child(2n) {
+                margin-top: 30px;
+            }
+    
+            
+            &:first-child {
+                margin-bottom: 30px;
+            }
         }
-
-        &:nth-child(2n + 1) {
-            margin-right: 30px;
-        }
-        &:first-child {
-            margin-bottom: 30px;
-          }
     }
 
     &__statistics {

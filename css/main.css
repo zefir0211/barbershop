@@ -34,9 +34,16 @@ img {
 }
 
 .container {
-  max-width: 480px;
+  max-width: 100%;
   padding: 0 30px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -171,7 +178,6 @@ img {
   padding: 0;
 }
 .hero__container {
-  min-width: 480px;
   min-height: 580px;
   background-color: #303030;
   flex-grow: 1;
@@ -407,17 +413,20 @@ img {
   flex-wrap: wrap;
 }
 .reasons__item {
+  margin: 0 auto;
   width: 193px;
   height: 133px;
 }
-.reasons__item:nth-child(2n) {
-  margin-top: 30px;
-}
-.reasons__item:nth-child(2n+1) {
-  margin-right: 30px;
-}
-.reasons__item:first-child {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .reasons__item {
+    margin: 0;
+  }
+  .reasons__item:nth-child(2n) {
+    margin-top: 30px;
+  }
+  .reasons__item:first-child {
+    margin-bottom: 30px;
+  }
 }
 .reasons__statistics {
   display: block;
@@ -602,14 +611,13 @@ img {
 }
 
 .connect-wrap {
-  width: 480px;
   margin: 0 auto;
+}
+.connect-wrap .container {
   background-color: #191C26;
   background-image: url(../img/contacts-mob-bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
-}
-.connect-wrap .container {
   display: flex;
   flex-direction: column;
   padding: 0;
