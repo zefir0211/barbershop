@@ -53,8 +53,23 @@
         <section class="about" id="about">
             <div class="container">
                 <ul class="about__list">
-                    <li class="about__item"><img class="about__img" src="./img/about-img-1.jpg" alt="барбер бреет шею"></li>
-                    <li class="about__item"><img class="about__img" src="./img/about-img-2.jpg" alt="барбер делает кант"></li>
+                    <li class="about__item">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="./img/about-img-1.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/about-img-tab-1.jpg">
+                            <img src="./img//about-img-1.jpg" alt="барбер бреет шею">
+                        </picture>
+                    </li>
+                    <li class="about__item">
+                        <picture>
+                            <source media="(min-width: 1280px)" srcset="./img/about-img-2.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/about-img-tab-2.jpg">
+                            <img src="./img//about-img-2.jpg" alt="барбер бреет шею">
+                        </picture>
+                    </li>
+                    
+                    <!-- <li class="about__item"><img class="about__img" src="./img/about-img-1.jpg" alt="барбер бреет шею"></li>
+                    <li class="about__item"><img class="about__img" src="./img/about-img-2.jpg" alt="барбер делает кант"></li> -->
                 </ul>
                 <div class="about__container-text">
                     <p class="about__top-text">О НАС</p>

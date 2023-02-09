@@ -8,10 +8,38 @@
 
         // MOB
         padding: 84px 30px 84px 30px;
+
+        @media screen and (min-width: 768px) {
+            padding: 100px 39px;
+        }
+
+        // tab
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
 
     &__list {
         // display: flex;
+        // MOB
+        display: none;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        width: 330px;
+        height: auto;
+
+        margin-right: 30px;
+        
+        &:first-child {
+            margin-bottom: 30px;
+        }
     }
 
     &__item:first-child {
@@ -19,10 +47,6 @@
     }
 
     &__img {
-        // MOB
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
         // max-width: 270px;
         // height: auto;
     }
@@ -90,6 +114,10 @@
         color: var(--dark-color);
 
         margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 28px;
+        }
     }
 
     &__first-text {
