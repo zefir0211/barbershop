@@ -2,8 +2,13 @@
     // padding: 130px 40px 130px 55px;
 
     // MOB
-    height: 557px;
     padding: 84px 30px;
+
+    // tab
+    @media screen and (min-width: 768px) {
+
+        padding: 100px 39px;
+    }
     
     &__heading {
         // font-family: 'Raleway';
@@ -28,11 +33,20 @@
         color:var(--light-color);
 
         margin-bottom: 44px;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
 
     &__input-container {
-        // display: flex;
-        // flex-wrap: wrap;
+        // tab
+        @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 44px;
+        }
     }
 
     &__field {
@@ -58,6 +72,16 @@
             cursor: pointer;
         }
 
+        // tab
+        @media screen and (min-width: 768px) {
+            width: 330px;
+            margin: 0;
+            margin-right: 30px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
     }
 
     &__input {
@@ -93,7 +117,6 @@
         &:focus {
             border-bottom: 1px solid var(--light-color);
         }  
-        
     }
 
     &__label {
@@ -164,5 +187,10 @@
     &__btn {
         display: block;
         margin: 0 auto;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            margin: 0;
+        }
     }
 }

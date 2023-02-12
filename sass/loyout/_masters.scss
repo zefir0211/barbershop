@@ -5,6 +5,12 @@
 
         // MOB
         padding: 84px 30px;
+        background-color: #F7F7F7;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            padding: 100px 159px;
+        }
     }
 
     &__container-text {
@@ -54,9 +60,6 @@
     &__list {
         // display: flex;
         
-        :last-child {
-            margin: 0;
-        }
     }
     &__item {
         // width: 370px;
@@ -65,9 +68,16 @@
         // MOB
         width: 100%;
         margin-bottom: 64px;
+        &:last-child {
+            margin: 0;
+        }
     }
     &__img {
+        display: block;
         margin-bottom: 30px;
+        &-card {
+            margin: 0 auto;
+        }
     }
     &__heading {
         font-weight: 400;

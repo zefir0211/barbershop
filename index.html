@@ -162,7 +162,12 @@
                 </div>
                 <ul class="masters-soc__list">
                     <li class="masters-soc__item">
-                        <img class="masters-soc__img" src="./img/our-masters-mob-1.jpg" alt="">
+                        <picture class="masters-soc__img">
+                            <source media="(min-width: 1280px)" srcset="./img/our-masters-1.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/our-masters-tab-1.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/our-masters-mob-1.jpg">
+                            <img class="masters-soc__img-card" src="./img/our-masters-1.jpg" alt="барбер бреет шею">
+                        </picture>
                         <div class="masters-soc__container-info">
                             <h3 class="masters-soc__heading" lang="en">John Smith</h3>
                             <p class="masters-soc__text" lang="en">Extreme Barber</p>
@@ -199,7 +204,12 @@
                         </div>
                     </li>
                     <li class="masters-soc__item">
-                        <img  class="masters-soc__img" src="./img/our-masters-mob-2.jpg" alt="">
+                        <picture class="masters-soc__img">
+                            <source media="(min-width: 1280px)" srcset="./img/our-masters-2.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/our-masters-tab-2.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/our-masters-mob-2.jpg">
+                            <img class="masters-soc__img-card" src="./img/our-masters-2.jpg" alt="барбер бреет шею">
+                        </picture>
                         <div class="masters-soc__container-info">
                             <h3  class="masters-soc__heading" lang="en">Michele Doe</h3>
                             <p  class="masters-soc__text" lang="en">Extreme Barber</p>
@@ -236,7 +246,12 @@
                         </div>
                     </li>
                     <li class="masters-soc__item">
-                        <img  class="masters-soc__img" src="./img/our-masters-mob-3.jpg" alt="">
+                        <picture class="masters-soc__img">
+                            <source media="(min-width: 1280px)" srcset="./img/our-masters-3.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/our-masters-tab-3.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/our-masters-mob-3.jpg">
+                            <img class="masters-soc__img-card" src="./img/our-masters-3.jpg" alt="барбер бреет шею">
+                        </picture>
                         <div class="masters-soc__container-info">
                             <h3  class="masters-soc__heading" lang="en">Alan Black</h3>
                             <p  class="masters-soc__text" lang="en">Extreme Barber</p>
@@ -282,10 +297,38 @@
                     <h2 class="visually-hidden">Галерея</h2>
                 </div>
                 <ul class="gallery__list">
-                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-mob-1.jpg" alt="барбер стрижет"></li>
-                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-mob-2.jpg" alt="барбер бреет"></li>
-                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-mob-3.jpg" alt="барбер охлаждает лицо"></li>
-                    <li class="gallery__item"><img class="gallery__img" src="./img/gallery-mob-4.jpg" alt="барбер подводит кант"></li>
+                    <li class="gallery__item">
+                        <picture class="gallery__img">
+                            <source media="(min-width: 1280px)" srcset="./img/gallery-1.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-1.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-1.jpg">
+                            <img class="gallery__img-card" src="./img/gallery-1.jpg" alt="барбер бреет шею">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture class="gallery__img">
+                            <source media="(min-width: 1280px)" srcset="./img/gallery-2.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-2.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-2.jpg">
+                            <img class="gallery__img-card" src="./img/gallery-2.jpg" alt="барбер бреет шею">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture class="gallery__img">
+                            <source media="(min-width: 1280px)" srcset="./img/gallery-3.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-3.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-3.jpg">
+                            <img class="gallery__img-card" src="./img/gallery-3.jpg" alt="барбер бреет шею">
+                        </picture>
+                    </li>
+                    <li class="gallery__item">
+                        <picture class="gallery__img">
+                            <source media="(min-width: 1280px)" srcset="./img/gallery-4.jpg">
+                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-4.jpg">
+                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-4.jpg">
+                            <img class="gallery__img-card" src="./img/gallery-4.jpg" alt="барбер бреет шею">
+                        </picture>
+                    </li>
                 </ul>  
             </div>
         </section>
@@ -328,17 +371,24 @@
                 </section>
                 <section class="contacts" id="contacts">
                     <h2 class="contacts__heading">Контакты</h2>
-                    <address class="contacts__location">
-                        <ul class="contacts__list">
-                            <li class="contacts__item"><a class="contacts__link" href="https://goo.gl/maps/fn1ZS89mWcr5evEQ9">
-                                <svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-map-pin"></use></svg>ул. Васильковая, 7А, Киев, 08132</a></li>
-                            <li class="contacts__item"><a class="contacts__link" href="tel:+380441111111"><svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-phone"></use></svg>+38 044 111 11 11</a></li>
-                            <li class="contacts__item"><a class="contacts__link link--underline" href="mailto:barbershop@email.com"><svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-mail"></use></svg>barbershop@email.com</a></li>
-                        </ul>
-                    </address>
-                    <div class="contacts__container-text">
-                        <p class="contacts__bottom-top-text">время работы</p>
-                        <p class="contacts__bottom-bot-text ">Ежедневно с 9:00 до 22:00</p>
+                    <div class="contacts__wrap-container">
+                        <address class="contacts__location">
+                            <ul class="contacts__list">
+                                <li class="contacts__item"><a class="contacts__link" href="https://goo.gl/maps/fn1ZS89mWcr5evEQ9">
+                                    <svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-map-pin"></use></svg>ул. Васильковая, 7А, Киев, 08132</a>
+                                </li>
+                                <li class="contacts__item"><a class="contacts__link" href="tel:+380441111111">
+                                    <svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-phone"></use></svg>+38 044 111 11 11</a>
+                                </li>
+                                <li class="contacts__item"><a class="contacts__link link--underline" href="mailto:barbershop@email.com">
+                                    <svg class="contacts__item-icon" width="24" height="24" ><use href="./img/symbol-defs.svg#icon-mail"></use></svg>barbershop@email.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                        <div class="contacts__container-text">
+                            <p class="contacts__bottom-top-text">время работы</p>
+                            <p class="contacts__bottom-bot-text ">Ежедневно с 9:00 до 22:00</p>
+                        </div>
                     </div>
                 </section>
             </div>

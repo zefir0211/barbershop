@@ -24,14 +24,24 @@
         flex-direction: column;
 
         padding: 0;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            background-image: url(../img/contacts-tab-bg.png);
+        }
     }
 
     .contacts {
         // width: calc(50% - 15px);
         // height: 644px;
         
-        // MOB
-        height: 496px;
+        // // MOB
+        // height: 496px;
+
+        // // tab
+        // @media screen and (min-width: 768px) {
+        //     height: 449px;
+        // }
 
         // padding-top: 130px;
         // padding-left: 100px;

@@ -4,6 +4,11 @@
 
         // MOB
         padding: 84px 30px;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            padding: 100px 39px;
+        }
     }
 
 &__text-container {
@@ -36,17 +41,37 @@
     }
 
     &__list {
-        // display: flex;
+        // tab
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+            margin-bottom: -30px;
+        }
     }
     &__item {
         // margin-right: 30px;
 
         // MOB
+        display: block;
         margin-bottom: 30px;
         
         &:last-child {
             // margin-right: 0;
             margin-bottom: 0px;
         }
+
+        // tab
+        @media screen and (min-width: 768px) {
+            width: 330px;
+            
+            width: calc(100% / 2 - 30px);
+            margin-left: 30px;
+            
+        }
+    }
+
+    &__img-card {
+        margin: 0 auto;
     }
 }

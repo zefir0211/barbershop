@@ -10,7 +10,7 @@
 
         // padding: 130px 55px;
 
-        // MOB
+// MOB
         max-width: 480px;
         min-height: 826px;
         background-color: #111319;
@@ -21,14 +21,33 @@
         background-size: cover;
         margin: 0 auto;
 
+// tab
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            min-height: 858px;
+            background-color: #111319;
+            background-image:
+                url(../img/prices-tab-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        
+
     .container {
         // width: 1170px;
         // position: relative;
         // padding: 0;
 
-        // MOB
+// MOB
         position: relative;
         padding: 84px 30px 84px 30px;
+
+// tab
+    @media screen and (min-width: 768px) {
+        padding: 100px 39px;
+    }
     }
 
     &__container {
@@ -40,6 +59,10 @@
         background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
         padding: 30px;
         margin-bottom: 50px;
+
+        @media screen and (min-width: 768px){
+            padding: 30px 40px;
+        }
     }    
 
     &__top-text {
@@ -76,6 +99,10 @@
             height: 60px; 
             background-color: rgba(157, 164, 189, 0.6);
             transform: rotate(90deg) translate(-23px);
+
+            @media screen and (min-width: 768px) {
+                top: 100px;
+            }
         }
     }
 
@@ -117,24 +144,24 @@
 
     // MOB
 
-    &--left {
-        @media screen and (min-width: 768px) {
-            background-image: linear-gradient(180deg, 
-            #171a24 0%, 
-            rgba(23, 26, 36, 0.2) 100%);
-        }    
-    }
+    // &--left {
+    //     @media screen and (min-width: 768px) {
+    //         background-image: linear-gradient(180deg, 
+    //         #171a24 0%, 
+    //         rgba(23, 26, 36, 0.2) 100%);
+    //     }    
+    // }
 
-    &--right {
-        @media screen and (min-width: 768px) {
-            background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
-        } 
-    }
+    // &--right {
+    //     @media screen and (min-width: 768px) {
+    //         background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    //     } 
 
     &__item {
         // MOB
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
 
         margin-bottom: 20px;
 
@@ -143,7 +170,17 @@
             margin: 0;
         }
         
-
+        @media screen and (min-width: 425px) {
+            &::after {
+                content: "";
+                height: 1px;
+                width: 20px;
+                background-color: rgba(157, 164, 189, 0.12);
+                margin-left: 6px;
+                margin-right: 6px;
+                flex-grow: 1;
+            }
+        }
         // &:last-child {
         //     margin: 0;
         // }
@@ -164,5 +201,15 @@
         letter-spacing: 0.02em;
 
         color: #9DA4BD;
+
+        @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 1.67;
+        }
+        @media screen and (min-width: 425px) {
+            &:last-child {
+                order: 1;
+            }
+        }
     }
 }

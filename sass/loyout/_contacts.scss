@@ -1,6 +1,11 @@
 .contacts {
     padding: 84px 30px;
 
+    // tab
+    @media screen and (min-width: 768px) {
+        padding: 100px 39px;
+    }
+
     &__heading {
         font-family: 'Raleway';
         font-weight: 700;
@@ -12,10 +17,26 @@
         color: var(--light-color);
 
         margin-bottom: 40px;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    &__wrap-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &__list {
         padding-left: 40px;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            max-width: 260px;
+        }
     }
 
     &__item {
@@ -26,6 +47,11 @@
 
             // MOB
             margin-bottom: 44px;
+                
+            // tab
+            @media screen and (min-width: 768px) {
+                margin: 0;
+            }
         }
     }
 
@@ -61,6 +87,11 @@
 
     &__container-text {
         position: relative;
+
+        // tab
+        @media screen and (min-width: 768px) {
+            max-width: 330px;
+        }
     }
 
     &__bottom-top-text {
