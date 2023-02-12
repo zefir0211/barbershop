@@ -1,13 +1,10 @@
 
 .header {
+    // MOB
     position: absolute;
     width: 100%;
+    
     .container {
-        // margin: 0 auto;
-        // display: flex;
-        // align-items: center;
-        // padding-top: 20px;
-
         // MOB
         position: relative;
         padding: 40px 15px 0 15px;
@@ -16,10 +13,12 @@
             padding: 40px 30px 0 30px;
         }
 
+        // MOB
         @media screen and (min-width: 480px) {
             padding: 40px 30px 0 30px;
         }
 
+        // tab
         @media screen and (min-width: 768px) {
             padding: 40px 41px 0 50px;
 
@@ -27,23 +26,23 @@
             display: flex;
         }
 
+        // desktop
         @media screen and (min-width: 1280px) {
-            padding: 40px 52px 0 62px;
+            padding: 0;
+            padding: 40px 55px 0 55px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
         }
         
     }
     
     &__logo {     
-        // margin-right:60px;
-        // margin-left: 35px;
-        
         // tab
-
-        
         @media screen and (min-width: 768px) {
-            margin-right: 60px;
+            margin-right: 70px;
+            margin-left: 10px;
         }
-      
     }
     
     &__logo-icon {    
@@ -54,11 +53,20 @@
         @media screen and (min-width: 768px) {
             fill: #303030;
         }
+    } 
+
+    &__nav-container {
+        // MOB
+        width: 100%;
+        display: flex;
+        align-items: baseline;
     }
 
     &__navigation {
+        // MOB
         display: none;
         
+        // tab
         @media screen and (min-width: 768px)  {
             display: block;
             padding-top: 10px;
@@ -66,20 +74,26 @@
     }
 
     &__list {
+        // MOB
         display: flex;
     }
-    
-    // &__item:not(:last-child) {
-    // margin-right: 40px;
-    // }
+
+    // desktop
+    @media screen and (min-width: 1280px) {
+        &__item:not(:last-child) {
+        margin-right: 40px;
+        }
+    }
 
     &__item {
+        // tab
         @media screen and (min-width: 768px)  {
             margin-right: 25px;
         }
     }
 
     &__link {
+        // MOB
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 600;
@@ -98,16 +112,28 @@
     }
 
     &__contacts {
+        // MOB
         margin-left: auto;
         display: none;
 
+        // tab
         @media screen and (min-width: 768px)  {
             display: flex;
             flex-direction: column-reverse;
         }
+
+        // desktop
+        @media screen and (min-width: 1280px)  {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+
+            margin-right: 2px;
+        }
     }
 
     &__tel {
+        // MOB
         margin-right: 40px;
     
         font-weight: 600;
@@ -124,18 +150,31 @@
             cursor: pointer;
         }
 
+        // tab
         @media screen and (min-width: 768px) {
             margin: 0 auto;
+        }
+
+        // desktop
+        @media screen and (min-width: 1280px) {
+            margin-right: 20px;
         }
     }
 
     &__btn {
+        // tab
         @media screen and (min-width: 768px) {
             margin-bottom: 20px;
+        }
+
+        // desktop
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 0px;
         }
     }
 
     &__mob-btn {
+        // MOB
         position: absolute;
         top: 48px;
         right: 30px;   
@@ -148,6 +187,7 @@
             fill: var(--active-color);
         }
 
+        // tab
         @media screen and (min-width: 768px) {
             display: none;
         }
