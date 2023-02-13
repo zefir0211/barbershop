@@ -610,12 +610,14 @@ img {
   .prices {
     max-width: 768px;
     min-height: 858px;
-    background-color: #111319;
     background-image: url(../img/prices-tab-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .prices {
+    max-width: 1280px;
+    min-height: 718px;
+    background-image: url(../img/prices-bg.png);
   }
 }
 .prices .container {
@@ -627,6 +629,11 @@ img {
     padding: 100px 39px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .prices .container {
+    padding: 130px 55px;
+  }
+}
 .prices__container {
   background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
   padding: 30px;
@@ -635,6 +642,12 @@ img {
 @media screen and (min-width: 768px) {
   .prices__container {
     padding: 30px 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .prices__container {
+    display: flex;
+    padding: 0;
   }
 }
 .prices__top-text {
@@ -660,6 +673,13 @@ img {
 @media screen and (min-width: 768px) {
   .prices__top-text::before {
     top: 100px;
+    left: 70px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .prices__top-text::before {
+    top: 130px;
+    left: 85px;
   }
 }
 .prices__heading {
@@ -676,6 +696,19 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .price-list {
+    width: 585px;
+    height: 240px;
+    padding: 30px 40px;
+  }
+  .price-list--left {
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .price-list--right {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
 .price-list__item {
   display: flex;
   justify-content: space-between;
@@ -702,15 +735,15 @@ img {
   letter-spacing: 0.02em;
   color: #9DA4BD;
 }
+@media screen and (min-width: 425px) {
+  .price-list__text:last-child {
+    order: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   .price-list__text {
     font-size: 18px;
     line-height: 1.67;
-  }
-}
-@media screen and (min-width: 425px) {
-  .price-list__text:last-child {
-    order: 1;
   }
 }
 
