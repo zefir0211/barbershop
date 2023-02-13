@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>BarberShop</title>
 </head>
@@ -27,7 +27,7 @@
                 </nav>
                 <div class="header__contacts">
                     <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="header__btn btn btn--light" tupe="button">онлайн-запись</button>
+                    <button class="header__btn btn btn--light" type="button">онлайн-запись</button>
                 </div>
             </div>
             <svg class="header__mob-btn" width="40" height="40">
@@ -54,33 +54,32 @@
         </section>
         <section class="about" id="about">
             <div class="container">
-                <ul class="about__list">
-                    <li class="about__item">
-                        <picture>
-                            <source media="(min-width: 1280px)" srcset="./img/about-img-1.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/about-img-tab-1.jpg">
-                            <img src="./img//about-img-1.jpg" alt="барбер бреет шею">
-                        </picture>
-                    </li>
-                    <li class="about__item">
-                        <picture>
-                            <source media="(min-width: 1280px)" srcset="./img/about-img-2.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/about-img-tab-2.jpg">
-                            <img src="./img//about-img-2.jpg" alt="барбер бреет шею">
-                        </picture>
-                    </li>
-                    
-                    <!-- <li class="about__item"><img class="about__img" src="./img/about-img-1.jpg" alt="барбер бреет шею"></li>
-                    <li class="about__item"><img class="about__img" src="./img/about-img-2.jpg" alt="барбер делает кант"></li> -->
-                </ul>
-                <div class="about__container-text">
-                    <p class="about__top-text">О НАС</p>
-                    <h2 class="about__heading">Лучший Барбершоп твоего города</h2>
-                    <p class="about__first-text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-                    <p class="about__second-text">Мы команда, которая никогда не останавливается на достигнутом 
-                        и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
-                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <button class="about__btn btn btn--dark" tupe="button">онлайн-запись</button>    
+                <div class="about__content-container">
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="./img/about-img-1.jpg">
+                                <source media="(min-width: 768px)" srcset="./img/about-img-tab-1.jpg">
+                                <img src="./img//about-img-1.jpg" alt="барбер бреет шею">
+                            </picture>
+                        </li>
+                        <li class="about__item">
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="./img/about-img-2.jpg">
+                                <source media="(min-width: 768px)" srcset="./img/about-img-tab-2.jpg">
+                                <img src="./img//about-img-2.jpg" alt="барбер бреет шею">
+                            </picture>
+                        </li>
+                    </ul>
+                    <div class="about__container-text">
+                        <p class="about__top-text">О НАС</p>
+                        <h2 class="about__heading">Лучший Барбершоп твоего города</h2>
+                        <p class="about__first-text">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+                        <p class="about__second-text">Мы команда, которая никогда не останавливается на достигнутом 
+                            и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
+                            то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                        <button class="about__btn btn btn--dark" type="button">онлайн-запись</button>    
+                    </div>
                 </div>
             </div>
         </section>
@@ -92,7 +91,7 @@
                     <ul class="price-list price-list--left">
                         <li class="price-list__item">
                             <p class="price-list__text">Мужская стрижка</p>
-                            <p class="price-list__text"">от 300 грн.</p>
+                            <p class="price-list__text">от 300 грн.</p>
                         </li>
                         <li class="price-list__item">
                             <p class="price-list__text">Стрижка бороды</p>
@@ -126,7 +125,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="prices__btn btn btn--light" tupe="button">онлайн-запись</button>
+                <button class="prices__btn btn btn--light" type="button">онлайн-запись</button>
             </div>
         </section>
         <section class="reasons">
@@ -347,8 +346,7 @@
                                     name="online-name"
                                     class="online__input"
                                     placeholder=" "
-                                    required
-                                    />
+                                    required>
                                     <label class="online__label" for="online-name">Имя*</label>
                                 </div>
                                 <div class="online__field">
@@ -359,8 +357,7 @@
                                     class="online__input"
                                     placeholder=" "
                                     pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}[\-]\d{2}[\-]\d{2}" title="+38(097)111-11-11" minlength="15" maxlength="17"
-                                    required
-                                    />
+                                    required>
                                     <label class="online__label" for="online-tel">Телефон*</label>
                                 </div>
                             </div>
@@ -368,7 +365,7 @@
                                 <textarea class="online__text" name="online-text" id="online-text" placeholder=" "></textarea>
                                 <label class="online__label" for="online-text">сообщение</label>
                             </div>
-                            <button class="online__btn btn btn--light" tupe="button">отправить</button>
+                            <button class="online__btn btn btn--light" type="button">отправить</button>
                     </form>
                 </section>
                 <section class="contacts" id="contacts">

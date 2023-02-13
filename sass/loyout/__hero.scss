@@ -23,7 +23,7 @@
 
         // desktop
         @media screen and (min-width: 1280px) {
-            padding: 0px 55px 0 55px;
+            padding: 0px 75px 0 39px;
 
             display: flex;
             flex-direction: row;
@@ -48,7 +48,7 @@
         background-position: center;
         background-size: cover;
 
-        padding: 208px 30px 0 30px;
+        padding: 208px 30px 0 31px;
 
         // tab
         @media screen and (min-width: 768px)  {
@@ -71,7 +71,7 @@
         @media screen and (min-width: 1280px)  {
             width: 1073px;
             height: 672px;
-            padding: 271px 0 0 90px;
+            padding: 271px 0 0 99px;
         
             background-image: linear-gradient(
                 rgba(25, 28, 38, 0.2),
@@ -139,6 +139,11 @@
 
         color: #9DA4BD;
 
+        // tab
+        @media screen and (min-width: 768px) {
+            max-width: 349px;
+        }
+
         // desktop
         @media screen and (min-width: 1280px) {
             font-size: 18px;
@@ -165,7 +170,7 @@
         
         width: 85px;
         height: 680px;
-        padding: 0px 36px 0px 35px;
+        padding: 0px 36px 0px 30px;
         margin-right: 28px;
 
         display: flex;
@@ -175,7 +180,8 @@
     // desktop
     @media screen and (min-width: 1280px) {
         height: 672px;
-        padding: 0 30px;
+        margin-right: 0;
+        padding: 0 36px 0 20px;
     }
 
     &__list {
