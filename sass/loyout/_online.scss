@@ -6,23 +6,16 @@
 
     // tab
     @media screen and (min-width: 768px) {
-
         padding: 100px 39px;
+    }
+
+    // desktop
+    @media screen and (min-width: 1280px) {
+        padding: 130px 55px 130px 41px;
     }
     
     &__heading {
-        // font-family: 'Raleway';
-        // font-weight: 700;
-        // font-size: 42px;
-        // line-height: 1.16;
-        // letter-spacing: 0.05em;
-
-        // color: var(--light-color);
-
-        // margin-bottom: 44px;
-
         // MOB
-        
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 42px;
@@ -51,16 +44,8 @@
 
     &__field {
         position: relative;
-
-        // margin-right: 30px;
-        // margin-bottom: 44px;
-
         // MOB
         margin-bottom: 44px;
-
-        // &:nth-child(2) {
-        //     margin-right: 0;
-        // }
 
         &:hover .online__input {
             border-bottom: 1px solid var(--light-color);
@@ -82,11 +67,15 @@
                 margin: 0;
             }
         }
+
+        // desktop
+        @media screen and (min-width: 1280px) {
+            width: 270px;
+
+        }
     }
 
     &__input {
-        // width: 265px;
-
         // MOB
         width: 100%;
         height: 24px;
@@ -96,7 +85,6 @@
         border-bottom: 1px solid rgba(157, 164, 189, 0.4);
         transition: border 300ms linear;
         
-       
         font-weight: 600;
         font-size: 11px;
         line-height: 1.36;
@@ -113,7 +101,7 @@
         &:focus + .online__label {
             color: #ffffff;
             transform: translateY(-100%);
-          }
+        }
         &:focus {
             border-bottom: 1px solid var(--light-color);
         }  

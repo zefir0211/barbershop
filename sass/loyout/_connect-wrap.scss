@@ -1,18 +1,6 @@
 .connect-wrap {
-    // width: 1280px;
-    // margin: 0 auto;
-    
-    // background-color: #191C26;
-    // background-image: url(../img/contacts-bg.png);
-    // background-repeat: no-repeat;
-    // background-position: right;
-    // background-size: calc(50% - 15px);
-
     // MOB
     margin: 0 auto;
-
-    
-    
 
     .container {
         background-color: #191C26;
@@ -28,6 +16,14 @@
         // tab
         @media screen and (min-width: 768px) {
             background-image: url(../img/contacts-tab-bg.png);
+        }
+
+        // desktop
+        @media screen and (min-width: 1280px) { 
+            background-image: url(../img/contacts-bg.png);
+            background-position: right;
+
+            flex-direction: row;
         }
     }
 

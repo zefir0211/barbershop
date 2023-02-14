@@ -757,6 +757,13 @@ img {
     padding: 100px 39px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .reasons .container {
+    padding: 143px 155px 139px 155px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .reasons__list {
   display: flex;
   flex-direction: column;
@@ -773,6 +780,11 @@ img {
     max-width: 450px;
     margin: 0;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reasons__list {
+    margin: 0;
   }
 }
 .reasons__item {
@@ -802,6 +814,12 @@ img {
 @media screen and (min-width: 768px) {
   .reasons__item {
     width: 210px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reasons__item {
+    width: 170px;
+    padding: 20px;
   }
 }
 .reasons__statistics {
@@ -834,6 +852,12 @@ img {
 @media screen and (min-width: 768px) {
   .reasons__text-container {
     max-width: 500px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reasons__text-container {
+    max-width: 470px;
+    margin-top: -9px;
   }
 }
 .reasons__top-text {
@@ -872,6 +896,11 @@ img {
   color: #555555;
   margin-bottom: 44px;
 }
+@media screen and (min-width: 1280px) {
+  .reasons__bottom-text {
+    margin-bottom: 0;
+  }
+}
 
 .masters .container {
   padding: 84px 30px;
@@ -880,6 +909,11 @@ img {
 @media screen and (min-width: 768px) {
   .masters .container {
     padding: 100px 159px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .masters .container {
+    padding: 130px 55px;
   }
 }
 .masters__container-text {
@@ -915,6 +949,11 @@ img {
   color: var(--dark-color);
 }
 
+@media screen and (min-width: 1280px) {
+  .masters-soc__list {
+    display: flex;
+  }
+}
 .masters-soc__item {
   width: 100%;
   margin-bottom: 64px;
@@ -922,12 +961,27 @@ img {
 .masters-soc__item:last-child {
   margin: 0;
 }
+@media screen and (min-width: 1280px) {
+  .masters-soc__item {
+    margin-bottom: 0;
+    width: 370px;
+    margin-right: 30px;
+  }
+  .masters-soc__item:last-child {
+    margin: 0;
+  }
+}
 .masters-soc__img {
   display: block;
   margin-bottom: 30px;
 }
 .masters-soc__img-card {
   margin: 0 auto;
+}
+@media screen and (min-width: 1280px) {
+  .masters-soc__img-card {
+    margin: 0;
+  }
 }
 .masters-soc__heading {
   font-weight: 400;
@@ -976,6 +1030,11 @@ img {
     padding: 100px 39px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .gallery .container {
+    padding: 130px 55px;
+  }
+}
 .gallery__text-container {
   position: relative;
   margin-bottom: 44px;
@@ -1021,6 +1080,12 @@ img {
     margin-left: 30px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .gallery__item {
+    width: 270px;
+    width: calc(25% - 30px);
+  }
+}
 .gallery__img-card {
   margin: 0 auto;
 }
@@ -1042,12 +1107,24 @@ img {
     background-image: url(../img/contacts-tab-bg.png);
   }
 }
+@media screen and (min-width: 1280px) {
+  .connect-wrap .container {
+    background-image: url(../img/contacts-bg.png);
+    background-position: right;
+    flex-direction: row;
+  }
+}
 .online {
   padding: 84px 30px;
 }
 @media screen and (min-width: 768px) {
   .online {
     padding: 100px 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .online {
+    padding: 130px 55px 130px 41px;
   }
 }
 .online__heading {
@@ -1092,6 +1169,11 @@ img {
   }
   .online__field:last-child {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .online__field {
+    width: 270px;
   }
 }
 .online__input {
@@ -1190,6 +1272,11 @@ img {
     padding: 100px 39px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding: 130px 0px 130px 90px;
+  }
+}
 .contacts__heading {
   font-family: "Raleway";
   font-weight: 700;
@@ -1210,12 +1297,22 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (min-width: 1280px) {
+  .contacts__wrap-container {
+    display: block;
+  }
+}
 .contacts__list {
   padding-left: 40px;
 }
 @media screen and (min-width: 768px) {
   .contacts__list {
     max-width: 260px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts__list {
+    margin-bottom: 70px;
   }
 }
 .contacts__item {
@@ -1226,7 +1323,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts__item:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 .contacts__link {
@@ -1257,7 +1354,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts__container-text {
-    max-width: 330px;
+    width: 330px;
   }
 }
 .contacts__bottom-top-text {
@@ -1300,6 +1397,11 @@ img {
   .footer .container {
     flex-direction: row;
     padding: 56px 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer .container {
+    padding: 55px;
   }
 }
 .footer__text {

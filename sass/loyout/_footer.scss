@@ -1,11 +1,5 @@
 .footer {
     .container {
-        // display: flex;
-        // justify-content: space-between;
-
-        
-        // padding: 55px;
-
         // MOB
         display: flex;
         flex-direction: column-reverse;
@@ -15,6 +9,11 @@
         @media screen and (min-width: 768px) {
             flex-direction: row;
             padding: 56px 39px;
+        }
+
+        // desktop
+        @media screen and (min-width: 1280px) {
+            padding: 55px;
         }
     }
 
@@ -43,7 +42,6 @@
         }
     }
     
-
     &__soc-list {
         display: flex;
 
