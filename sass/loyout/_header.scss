@@ -186,17 +186,41 @@
     &__mob-btn {
         // MOB
         position: absolute;
+        display: block;
         top: 48px;
-        right: 30px;   
-        
-        fill: var(--light-color);
+        right: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
 
+        fill: var(--light-color);
+        
         transition: fill 300ms linear;
 
-        &:hover, &:focus {
+        &--close-icon {
+            display: none;
+            fill: var(--dark-color);
+        }
+
+        &.is-open .header__mob-btn--close-icon {
+            display: block;
+        }
+
+        &.is-open .header__mob-btn--menu-icon {
+            display: none;
+        }
+
+        &:hover, &:focus, 
+        &--close-icon:hover, &--close-icon:focus {
             fill: var(--active-color);
         }
 
+        &.is-open body {
+            overflow: hidden;
+        }
+
+        
         // tab
         @media screen and (min-width: 768px) {
             display: none;

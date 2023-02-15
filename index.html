@@ -30,10 +30,36 @@
                     <button class="header__btn btn btn--light" type="button">онлайн-запись</button>
                 </div>
             </div>
-            <svg class="header__mob-btn" width="40" height="40">
-                <use href="./img/symbol-defs.svg#icon-mob-menu-btn"></use>
-            </svg>
+            <button class="header__mob-btn" tupe="button" aria-expanded="false" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="header__mob-btn--menu-icon" href="./img/symbol-defs.svg#icon-mob-menu-btn"></use>
+                    <use class="header__mob-btn--close-icon" href="./img/symbol-defs.svg#icon-mobile-close-btn"></use>
+                </svg>
+            </button> 
         </div> 
+            <!-- Modal menu -->
+            <div class="header__modal-menu" data-menu>
+                <div class="container">
+                    <nav class="header__mob-navigation">
+                        <ul class="header__mob-list">
+                            <li class="header__mob-item"><a class="header__mob-link" href="#about" tupe="button" aria-expanded="false" data-menu-button>О нас</a></li>
+                            <li class="header__mob-item"><a class="header__mob-link" href="#prices">Услуги и цены</a></li>
+                            <li class="header__mob-item"><a class="header__mob-link" href="#masters">Мастера</a></li>
+                            <li class="header__mob-item"><a class="header__mob-link" href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__mob-contacts">
+                        <a class="header__mob-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+                        <button class="header__mob-menu-btn btn btn--dark" type="button">онлайн-запись</button>
+                    </div>
+                    <div class="soc-mob">
+                        <ul class="soc-mob__list">
+                            <li class="soc-mob__item"><a class="soc-mob__link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                            <li class="soc-mob__item"><a class="soc-mob__link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </header>
     <main>
         <section class="hero">
@@ -407,6 +433,6 @@
         </div>
     </footer>
 
-    
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
