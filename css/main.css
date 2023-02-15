@@ -1637,6 +1637,11 @@ img {
   display: block;
   overflow: auto;
 }
+@media screen and (min-width: 768px) {
+  .header__modal-menu.is-open {
+    display: none;
+  }
+}
 .header__mob-navigation {
   margin-bottom: 64px;
 }
