@@ -1624,6 +1624,7 @@ img {
   -moz-box-shadow: -21px 22px 28px -11px rgba(111, 111, 111, 0.67) inset;
 }
 .header__modal-menu .container {
+  position: absolute;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
