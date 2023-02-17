@@ -80,7 +80,7 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
-  transition: color 300ms linear, background-color 300ms;
+  transition: color 300ms linear, background-color 300ms linear;
   border: 1px solid #FF6C00;
   border-radius: 25px;
 }
@@ -265,38 +265,33 @@ img {
     margin-bottom: 0px;
   }
 }
-.header__mob-btn {
+.header__open-menu, .header__close-menu {
+  border: none;
+  background-color: transparent;
   position: absolute;
-  display: block;
   top: 48px;
   right: 30px;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .header__open-menu, .header__close-menu {
+    display: none;
+  }
+}
+.header__open-menu-btn {
   fill: var(--light-color);
   transition: fill 300ms linear;
 }
-.header__mob-btn--close-icon {
-  display: none;
-  fill: var(--dark-color);
-}
-.header__mob-btn.is-open .header__mob-btn--close-icon {
-  display: block;
-}
-.header__mob-btn.is-open .header__mob-btn--menu-icon {
-  display: none;
-}
-.header__mob-btn:hover, .header__mob-btn:focus, .header__mob-btn--close-icon:hover, .header__mob-btn--close-icon:focus {
+.header__open-menu-btn:hover, .header__open-menu-btn:focus {
   fill: var(--active-color);
 }
-.header__mob-btn.is-open body {
-  overflow: hidden;
+.header__close-menu-btn {
+  fill: var(--dark-color);
+  transition: fill 300ms linear;
 }
-@media screen and (min-width: 768px) {
-  .header__mob-btn {
-    display: none;
-  }
+.header__close-menu-btn:hover, .header__close-menu-btn:focus {
+  fill: var(--active-color);
 }
 
 .hero .container {
@@ -1617,14 +1612,16 @@ img {
 
 .header__modal-menu {
   position: fixed;
-  display: none;
   top: 0;
   right: 0;
   width: 75%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: -21px 22px 28px -11px rgba(111, 111, 111, 0.67) inset;
+  -webkit-box-shadow: -21px 22px 28px -11px rgba(111, 111, 111, 0.67) inset;
+  -moz-box-shadow: -21px 22px 28px -11px rgba(111, 111, 111, 0.67) inset;
 }
 .header__modal-menu .container {
   height: 100%;
@@ -1633,12 +1630,13 @@ img {
   flex-direction: column;
   padding: 118px 0px 0px 61px;
 }
-.header__modal-menu.is-open {
-  display: block;
-  overflow: auto;
+.header__modal-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 @media screen and (min-width: 768px) {
-  .header__modal-menu.is-open {
+  .header__modal-menu {
     display: none;
   }
 }
@@ -1689,7 +1687,7 @@ img {
 .soc-mob {
   position: relative;
   padding-right: 105px;
-  margin-left: auto;
+  margin-left: 100px;
 }
 .soc-mob__item:first-child {
   margin-bottom: 24px;

@@ -213,15 +213,17 @@
 .header {
     &__modal-menu {
         position: fixed;
-        display: none;
         top: 0;
         right: 0;
         width: 75%;
         height: 100%;
-        z-index: 1;
+        z-index: 2;
 
         background-color: #FFFFFF;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        box-shadow: -21px 22px 28px -11px rgba(111,111,111,0.67) inset;
+-webkit-box-shadow: -21px 22px 28px -11px rgba(111,111,111,0.67) inset;
+-moz-box-shadow: -21px 22px 28px -11px rgba(111,111,111,0.67) inset;
 
         .container {
             height: 100%;
@@ -232,15 +234,15 @@
             padding: 118px 0px 0px 61px;
         }
 
-        &.is-open {
-            display: block;
-            overflow: auto;
-
-            // tab
-    @media screen and (min-width: 768px)  {
-        display: none;
-    }
+        &.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
         }  
+        // tab
+        @media screen and (min-width: 768px)  {
+            display: none;
+        }
     }
 
     &__mob-navigation {
@@ -304,7 +306,7 @@
 .soc-mob {
     position: relative;
     padding-right: 105px;
-    margin-left: auto;
+    margin-left: 100px;
 
     &__item {
         &:first-child {

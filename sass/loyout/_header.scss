@@ -183,47 +183,39 @@
         }
     }
 
-    &__mob-btn {
-        // MOB
+    &__open-menu, &__close-menu {
+        border: none;
+        background-color: transparent;
         position: absolute;
-        display: block;
         top: 48px;
         right: 30px;
-        background-color: transparent;
-        border: none;
         cursor: pointer;
         z-index: 2;
 
+    
+        @media screen and (min-width: 768px) {
+            display: none;
+            
+        }
+    }
+
+    &__open-menu-btn {
         fill: var(--light-color);
         
         transition: fill 300ms linear;
-
-        &--close-icon {
-            display: none;
-            fill: var(--dark-color);
-        }
-
-        &.is-open .header__mob-btn--close-icon {
-            display: block;
-        }
-
-        &.is-open .header__mob-btn--menu-icon {
-            display: none;
-        }
-
-        &:hover, &:focus, 
-        &--close-icon:hover, &--close-icon:focus {
+    
+        &:hover,&:focus {
             fill: var(--active-color);
         }
-
-        &.is-open body {
-            overflow: hidden;
-        }
-
+    }
+    
+    &__close-menu-btn {
+        fill: var(--dark-color);
         
-        // tab
-        @media screen and (min-width: 768px) {
-            display: none;
+        transition: fill 300ms linear;
+    
+        &:hover, &:focus {
+            fill: var(--active-color);
         }
     }
 }
