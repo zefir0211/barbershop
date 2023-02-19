@@ -15,6 +15,46 @@ const showDialog = () => {
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
     document.getElementById('dialog').classList.remove('show');
   }
+  const closeDialog1 = () => {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.height = '';
+    body.style.overflowY = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    document.getElementById('dialog').classList.remove('show');
+  }
+  const closeDialog2 = () => {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.height = '';
+    body.style.overflowY = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    document.getElementById('dialog').classList.remove('show');
+  }
+  const closeDialog3 = () => {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.height = '';
+    body.style.overflowY = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    document.getElementById('dialog').classList.remove('show');
+  }
+  const closeDialog4 = () => {
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.height = '';
+    body.style.overflowY = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    document.getElementById('dialog').classList.remove('show');
+  }
   window.addEventListener('scroll', () => {
     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
   });
