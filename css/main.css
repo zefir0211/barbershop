@@ -1797,6 +1797,11 @@ img {
   padding: 30px;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-height: 400px) {
+  .modal-online {
+    margin-top: 40px;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal-online {
     min-width: 450px;
