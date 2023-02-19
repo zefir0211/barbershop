@@ -27,10 +27,10 @@
                 </nav>
                 <div class="header__contacts">
                     <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="header__btn btn btn--light" type="button" data-modal-open>онлайн-запись</button>
+                    <button class="header__btn btn btn--light" type="button" data-modal-open onClick='showDialog()'>онлайн-запись</button>
                 </div>
             </div>
-            <button class="header__open-menu" data-mobile-modal-open>
+            <button class="header__open-menu" data-mobile-modal-open onClick='showDialog()'>
                 <svg class="header__open-menu-btn" width="40" height="40">
                     <use href="./img/symbol-defs.svg#icon-mob-menu-btn"></use>
                 </svg>
@@ -115,7 +115,7 @@
                         <p class="about__second-text">Мы команда, которая никогда не останавливается на достигнутом 
                             и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                        <button class="about__btn btn btn--dark" type="button" data-modal-open-1>онлайн-запись</button>    
+                        <button class="about__btn btn btn--dark" type="button" data-modal-open-1 onClick='showDialog()'>онлайн-запись</button>    
                     </div>
                 </div>
             </div>
@@ -445,9 +445,9 @@
     </footer>
 
     <!-- MODAL WINDOWS -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" id="dialog" data-modal>
         <div class="modal-online">
-            <button class="modal-online__btn-close" tupe="button" data-modal-close>
+            <button class="modal-online__btn-close" tupe="button" data-modal-close onClick='closeDialog()'>
                 <svg class="modal-online__btn-close-icon" width="40" height="40">
                     <use href="./img/symbol-defs.svg#icon-mobile-close-btn"></use>
                 </svg>
@@ -489,5 +489,6 @@
     <script src="./js/top-btn.js"></script>
     <script src="./js/modal-online.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/body-scroll.js"></script>
 </body>
 </html>
