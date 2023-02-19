@@ -294,6 +294,22 @@ img {
   fill: var(--active-color);
 }
 
+.top-btn {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+.top-btn__icon {
+  fill: var(--dark-color);
+}
+.top-btn__icon:hover {
+  fill: var(--active-color);
+}
+
 .hero .container {
   padding: 0;
 }
@@ -1778,4 +1794,151 @@ img {
 .footer__soc-link:hover, .footer__soc-link:focus {
   color: var(--active-color);
   cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 300ms linear;
+}
+.backdrop.is-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-online {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 400px;
+  border-radius: 10px;
+  background-color: #191C26;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 480px) {
+  .modal-online {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-online {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .modal-online {
+    min-width: 530px;
+  }
+}
+.modal-online__btn-close {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+.modal-online__btn-close-icon {
+  fill: var(--light-color);
+}
+.modal-online__btn-close-icon:hover, .modal-online__btn-close-icon:focus {
+  fill: var(--active-color);
+  cursor: pointer;
+}
+.modal-online__heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--light-color);
+  margin-bottom: 44px;
+}
+.modal-online__field {
+  position: relative;
+  margin-bottom: 20px;
+}
+.modal-online__field:hover .modal-online__input {
+  border-bottom: 1px solid var(--light-color);
+  cursor: pointer;
+}
+.modal-online__field:hover .modal-online__label {
+  color: var(--light-color);
+  cursor: pointer;
+}
+.modal-online__input {
+  width: 100%;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: var(--light-color);
+  transition: border 300ms linear;
+}
+.modal-online__input:not(:placeholder-shown) + .modal-online__label {
+  color: #ffffff;
+  transform: translateY(-100%);
+}
+.modal-online__input:focus + .modal-online__label {
+  color: #ffffff;
+  transform: translateY(-100%);
+}
+.modal-online__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 300ms linear, color 300ms linear;
+}
+.modal-online__field-text {
+  position: relative;
+  margin-bottom: 44px;
+}
+.modal-online__field-text:hover .modal-online__text {
+  border-bottom: 1px solid var(--light-color);
+  cursor: pointer;
+}
+.modal-online__field-text:hover .modal-online__label {
+  color: var(--light-color);
+  cursor: pointer;
+}
+.modal-online__text {
+  width: 100%;
+  height: 64px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  resize: none;
+  color: var(--light-color);
+  transition: border 300ms linear;
+}
+.modal-online__text:not(:placeholder-shown) + .modal-online__label {
+  color: #ffffff;
+  transform: translateY(-100%);
+}
+.modal-online__text:focus + .modal-online__label {
+  color: #ffffff;
+  transform: translateY(-100%);
+}
+.modal-online__btn {
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

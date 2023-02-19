@@ -57,5 +57,8 @@
 <symbol id="icon-mobile-close-btn" viewBox="0 0 32 32">
 <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
 </symbol>
+<symbol id="icon-top-btn" viewBox="0 0 32 32">
+<path d="M16 1l-15 15h9v16h12v-16h9z"></path>
+</symbol>
 </defs>
 </svg>

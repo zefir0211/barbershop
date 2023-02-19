@@ -1,0 +1,19 @@
+.top-btn-container {
+}
+.top-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+
+    &__icon {
+        fill: var(--dark-color);
+
+        &:hover {
+            fill: var(--active-color);
+        }
+    }
+}

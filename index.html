@@ -27,10 +27,19 @@
                 </nav>
                 <div class="header__contacts">
                     <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button class="header__btn btn btn--light" type="button">онлайн-запись</button>
+                    <button class="header__btn btn btn--light" type="button" data-modal-open>онлайн-запись</button>
                 </div>
             </div>
-            <button class="header__open-menu" data-modal-open><svg class="header__open-menu-btn" width="40" height="40"><use href="./img/symbol-defs.svg#icon-mob-menu-btn"></use></svg></button>
+            <button class="header__open-menu" data-mobile-modal-open>
+                <svg class="header__open-menu-btn" width="40" height="40">
+                    <use href="./img/symbol-defs.svg#icon-mob-menu-btn"></use>
+                </svg>
+            </button>
+            <button class="top-btn" tupe="button" onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">
+                <svg class="top-btn__icon" width="40" height="40">
+                    <use href="./img/symbol-defs.svg#icon-top-btn"></use>
+                </svg>
+            </button>
         </div> 
     </header>
     <main>
@@ -51,19 +60,19 @@
 
                 <!-- Modal menu -->
 
-                <div class="header__modal-menu is-hidden" data-modal>
+                <div class="header__modal-menu is-hidden" data-mobile-modal>
                     <div class="container">
                         <nav class="header__mob-navigation">
                             <ul class="header__mob-list">
-                                <li class="header__mob-item"><a class="header__mob-link" href="#about">О нас</a></li>
-                                <li class="header__mob-item"><a class="header__mob-link" href="#prices">Услуги и цены</a></li>
-                                <li class="header__mob-item"><a class="header__mob-link" href="#masters">Мастера</a></li>
-                                <li class="header__mob-item"><a class="header__mob-link" href="#contacts">Контакты</a></li>
+                                <li class="header__mob-item"><a class="header__mob-link" href="#about" data-mobile-modal-close-1>О нас</a></li>
+                                <li class="header__mob-item"><a class="header__mob-link" href="#prices" data-mobile-modal-close-2>Услуги и цены</a></li>
+                                <li class="header__mob-item"><a class="header__mob-link" href="#masters" data-mobile-modal-close-3>Мастера</a></li>
+                                <li class="header__mob-item"><a class="header__mob-link" href="#contacts" data-mobile-modal-close-4>Контакты</a></li>
                             </ul>
                         </nav>
                         <div class="header__mob-contacts">
                             <a class="header__mob-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                            <button class="header__mob-menu-btn btn btn--dark" type="button">онлайн-запись</button>
+                            <button class="header__mob-menu-btn btn btn--dark" type="button" data-modal-open-3 data-mobile-modal-close-5>онлайн-запись</button>
                         </div>
                         <div class="soc-mob">
                             <ul class="soc-mob__list">
@@ -71,7 +80,7 @@
                                 <li class="soc-mob__item"><a class="soc-mob__link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
                             </ul>
                         </div>
-                        <button class="header__close-menu" data-modal-close>
+                        <button class="header__close-menu" data-mobile-modal-close>
                             <svg class="header__close-menu-btn" width="40" height="40">
                                 <use href="./img/symbol-defs.svg#icon-mobile-close-btn"></use>
                             </svg>
@@ -106,7 +115,7 @@
                         <p class="about__second-text">Мы команда, которая никогда не останавливается на достигнутом 
                             и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                             то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                        <button class="about__btn btn btn--dark" type="button">онлайн-запись</button>    
+                        <button class="about__btn btn btn--dark" type="button" data-modal-open-1>онлайн-запись</button>    
                     </div>
                 </div>
             </div>
@@ -153,7 +162,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="prices__btn btn btn--light" type="button">онлайн-запись</button>
+                <button class="prices__btn btn btn--light" type="button" data-modal-open-2>онлайн-запись</button>
             </div>
         </section>
         <section class="reasons">
@@ -393,7 +402,7 @@
                                 <textarea class="online__text" name="online-text" id="online-text" placeholder=" "></textarea>
                                 <label class="online__label" for="online-text">сообщение</label>
                             </div>
-                            <button class="online__btn btn btn--light" type="button">отправить</button>
+                            <button class="online__btn btn btn--light" type="submit">отправить</button>
                     </form>
                 </section>
                 <section class="contacts" id="contacts">
@@ -435,6 +444,50 @@
         </div>
     </footer>
 
+    <!-- MODAL WINDOWS -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-online">
+            <button class="modal-online__btn-close" tupe="button" data-modal-close>
+                <svg class="modal-online__btn-close-icon" width="40" height="40">
+                    <use href="./img/symbol-defs.svg#icon-mobile-close-btn"></use>
+                </svg>
+            </button>
+            <h2 class="modal-online__heading">Онлайн-запись</h2>
+            <form class="modal-online__form">
+                <div class="modal-online__input-container">
+                    <div class="modal-online__field">
+                        <input
+                        type="text"
+                        id="online-name"
+                        name="online-modal-name"
+                        class="modal-online__input"
+                        placeholder=" "
+                        required>
+                        <label class="modal-online__label" for="online-modal-name">Имя*</label>
+                    </div>
+                    <div class="modal-online__field">
+                        <input
+                        type="tel"
+                        id="online-tel"
+                        name="online-modal-tel"
+                        class="modal-online__input"
+                        placeholder=" "
+                        pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}[\-]\d{2}[\-]\d{2}" title="+38(097)111-11-11" minlength="15" maxlength="17"
+                        required>
+                        <label class="modal-online__label" for="online-modal-tel">Телефон*</label>
+                    </div>
+                </div>
+                <div class="modal-online__field-text">
+                    <textarea class="modal-online__text" name="online-modal-text" id="online-text" placeholder=" "></textarea>
+                    <label class="modal-online__label" for="online-modal-text">сообщение</label>
+                </div>
+                <button class="modal-online__btn btn btn--light" type="submit">отправить</button>
+        </form>
+        </div>
+    </div>
+
+    <script src="./js/top-btn.js"></script>
+    <script src="./js/modal-online.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
