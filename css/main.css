@@ -304,6 +304,7 @@ img {
   background-color: transparent;
   z-index: 5;
   cursor: pointer;
+  transition: border 300ms linear;
 }
 .top-btn:hover, .top-btn:focus {
   width: 40px;
