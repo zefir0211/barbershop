@@ -36,9 +36,7 @@
                 </svg>
             </button>
             <button class="top-btn" tupe="button" onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">
-                <svg class="top-btn__icon" width="40" height="40">
-                    <use href="./img/symbol-defs.svg#icon-top-btn"></use>
-                </svg>
+                <img class="top-btn__icon" src="./img/top-btn.png" alt="Вверх страницы">
             </button>
         </div> 
     </header>
@@ -95,16 +93,20 @@
                     <ul class="about__list">
                         <li class="about__item">
                             <picture>
-                                <source media="(min-width: 1280px)" srcset="./img/about-img-1.jpg">
-                                <source media="(min-width: 768px)" srcset="./img/about-img-tab-1.jpg">
-                                <img src="./img//about-img-1.jpg" alt="барбер бреет шею">
+                                <source srcset="./img/1280px/about-img-1-1280-x1.jpg 1x, 
+                                ./img/1280px/about-img-1-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                                <source srcset="./img/768px/about-img-tab-1-768-x1.jpg 1x, 
+                                ./img/768px/about-img-tab-1-768-x2.jpg 2x" media="(min-width:768px)"/>
+                                <img src="./img/about-img-1.jpg" alt="foto-our-team">
                             </picture>
                         </li>
                         <li class="about__item">
                             <picture>
-                                <source media="(min-width: 1280px)" srcset="./img/about-img-2.jpg">
-                                <source media="(min-width: 768px)" srcset="./img/about-img-tab-2.jpg">
-                                <img src="./img//about-img-2.jpg" alt="барбер бреет шею">
+                                <source srcset="./img/1280px/about-img-2-1280-x1.jpg 1x, 
+                                ./img/1280px/about-img-2-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                                <source srcset="./img/768px/about-img-tab-2-768-x1.jpg 1x, 
+                                ./img/768px/about-img-tab-2-768-x2.jpg 2x" media="(min-width:768px)"/>
+                                <img src="./img/about-img-2.jpg" alt="foto-our-team">
                             </picture>
                         </li>
                     </ul>
@@ -200,11 +202,14 @@
                 </div>
                 <ul class="masters-soc__list">
                     <li class="masters-soc__item">
-                        <picture class="masters-soc__img">
-                            <source media="(min-width: 1280px)" srcset="./img/our-masters-1.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/our-masters-tab-1.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/our-masters-mob-1.jpg">
-                            <img class="masters-soc__img-card" src="./img/our-masters-1.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/our-masters-1-1280-x1.jpg 1x, 
+                            ./img/1280px/our-masters-1-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/our-masters-tab-1-768-x1.jpg 1x, 
+                            ./img/768px/our-masters-tab-1-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/our-masters-mob-1-480-x1.jpg 1x, 
+                            ./img/480px/our-masters-mob-1-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/our-masters-1.jpg" alt="foto-our-team">
                         </picture>
                         <div class="masters-soc__container-info">
                             <h3 class="masters-soc__heading" lang="en">John Smith</h3>
@@ -242,11 +247,14 @@
                         </div>
                     </li>
                     <li class="masters-soc__item">
-                        <picture class="masters-soc__img">
-                            <source media="(min-width: 1280px)" srcset="./img/our-masters-2.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/our-masters-tab-2.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/our-masters-mob-2.jpg">
-                            <img class="masters-soc__img-card" src="./img/our-masters-2.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/our-masters-2-1280-x1.jpg 1x, 
+                            ./img/1280px/our-masters-2-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/our-masters-tab-2-768-x1.jpg 1x, 
+                            ./img/768px/our-masters-tab-2-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/our-masters-mob-2-480-x1.jpg 1x, 
+                            ./img/480px/our-masters-mob-2-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/our-masters-2.jpg" alt="foto-our-team">
                         </picture>
                         <div class="masters-soc__container-info">
                             <h3  class="masters-soc__heading" lang="en">Michele Doe</h3>
@@ -284,11 +292,14 @@
                         </div>
                     </li>
                     <li class="masters-soc__item">
-                        <picture class="masters-soc__img">
-                            <source media="(min-width: 1280px)" srcset="./img/our-masters-3.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/our-masters-tab-3.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/our-masters-mob-3.jpg">
-                            <img class="masters-soc__img-card" src="./img/our-masters-3.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/our-masters-3-1280-x1.jpg 1x, 
+                            ./img/1280px/our-masters-3-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/our-masters-tab-3-768-x1.jpg 1x, 
+                            ./img/768px/our-masters-tab-3-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/our-masters-mob-3-480-x1.jpg 1x, 
+                            ./img/480px/our-masters-mob-3-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/our-masters-3.jpg" alt="foto-our-team">
                         </picture>
                         <div class="masters-soc__container-info">
                             <h3  class="masters-soc__heading" lang="en">Alan Black</h3>
@@ -336,35 +347,47 @@
                 </div>
                 <ul class="gallery__list">
                     <li class="gallery__item">
-                        <picture class="gallery__img">
-                            <source media="(min-width: 1280px)" srcset="./img/gallery-1.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-1.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-1.jpg">
-                            <img class="gallery__img-card" src="./img/gallery-1.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/gallery-1-1280-x1.jpg 1x, 
+                            ./img/1280px/gallery-1-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/gallery-tab-1-768-x1.jpg 1x, 
+                            ./img/768px/gallery-tab-1-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/gallery-mob-1-480-x1.jpg 1x, 
+                            ./img/480px/gallery-mob-1-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/gallery-1.jpg" alt="foto-our-team">
                         </picture>
                     </li>
                     <li class="gallery__item">
-                        <picture class="gallery__img">
-                            <source media="(min-width: 1280px)" srcset="./img/gallery-2.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-2.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-2.jpg">
-                            <img class="gallery__img-card" src="./img/gallery-2.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/gallery-2-1280-x1.jpg 1x, 
+                            ./img/1280px/gallery-2-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/gallery-tab-2-768-x1.jpg 1x, 
+                            ./img/768px/gallery-tab-2-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/gallery-mob-2-480-x1.jpg 1x, 
+                            ./img/480px/gallery-mob-2-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/gallery-2.jpg" alt="foto-our-team">
                         </picture>
                     </li>
                     <li class="gallery__item">
-                        <picture class="gallery__img">
-                            <source media="(min-width: 1280px)" srcset="./img/gallery-3.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-3.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-3.jpg">
-                            <img class="gallery__img-card" src="./img/gallery-3.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/gallery-3-1280-x1.jpg 1x, 
+                            ./img/1280px/gallery-3-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/gallery-tab-3-768-x1.jpg 1x, 
+                            ./img/768px/gallery-tab-3-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/gallery-mob-3-480-x1.jpg 1x, 
+                            ./img/480px/gallery-mob-3-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/gallery-3.jpg" alt="foto-our-team">
                         </picture>
                     </li>
                     <li class="gallery__item">
-                        <picture class="gallery__img">
-                            <source media="(min-width: 1280px)" srcset="./img/gallery-4.jpg">
-                            <source media="(min-width: 768px)" srcset="./img/gallery-tab-4.jpg">
-                            <source media="(min-width: 480px)" srcset="./img/gallery-mob-4.jpg">
-                            <img class="gallery__img-card" src="./img/gallery-4.jpg" alt="барбер бреет шею">
+                        <picture>
+                            <source srcset="./img/1280px/gallery-4-1280-x1.jpg 1x, 
+                            ./img/1280px/gallery-4-1280-x2.jpg 2x" media="(min-width:1280px)"/>
+                            <source srcset="./img/768px/gallery-tab-4-768-x1.jpg 1x, 
+                            ./img/768px/gallery-tab-4-768-x2.jpg 2x" media="(min-width:768px)"/>
+                            <source srcset="./img/480px/gallery-mob-4-480-x1.jpg 1x, 
+                            ./img/480px/gallery-mob-4-480-x2.jpg 2x" media="(min-width:320px)"/>
+                            <img src="./img/gallery-4.jpg" alt="foto-our-team">
                         </picture>
                     </li>
                 </ul>  

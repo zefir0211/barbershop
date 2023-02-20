@@ -4,9 +4,17 @@
 
     .container {
         background-color: #191C26;
-        background-image: url(../img/contacts-mob-bg.png);
+        background-image: url(../img/480px/contacts-mob-bg-480-x1.png);
         background-repeat: no-repeat;
         background-position: bottom;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../img/480px/contacts-mob-bg-480-x2.png);
+            background-size: 480px 496px;        
+        }
 
         display: flex;
         flex-direction: column;
@@ -15,31 +23,32 @@
 
         // tab
         @media screen and (min-width: 768px) {
-            background-image: url(../img/contacts-tab-bg.png);
+            background-image: url(../img/768px/contacts-tab-bg-768-x1.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: 
+                        url(../img/768px/contacts-tab-bg-768-x2.png);
+                background-size: 768px 449px;
+            }    
         }
 
         // desktop
         @media screen and (min-width: 1280px) { 
-            background-image: url(../img/contacts-bg.png);
+            background-image: url(../img/1280px/contacts-bg-1280-x1.png);
             background-position: right;
 
             flex-direction: row;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../img/1280px/contacts-bg-1280-x2.png);
+                background-size: 625px;
+                
+            }  
         }
-    }
-
-    .contacts {
-        // width: calc(50% - 15px);
-        // height: 644px;
-        
-        // // MOB
-        // height: 496px;
-
-        // // tab
-        // @media screen and (min-width: 768px) {
-        //     height: 449px;
-        // }
-
-        // padding-top: 130px;
-        // padding-left: 100px;
     }
 }
