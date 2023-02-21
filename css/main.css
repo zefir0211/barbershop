@@ -1072,6 +1072,10 @@ img {
   display: flex;
   justify-content: center;
 }
+.social-network__link {
+  border-radius: 50%;
+  background-color: white;
+}
 .social-network__list {
   margin-right: 10px;
 }
@@ -1737,6 +1741,7 @@ img {
   height: 24px;
   background-color: transparent;
   border: none;
+  outline: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   color: var(--light-color);
   transition: border 300ms linear;
